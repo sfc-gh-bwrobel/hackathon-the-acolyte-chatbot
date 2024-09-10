@@ -1,6 +1,6 @@
 # Share Actors
 
-## Create secure view
+## Create a Secure View
 
 ```sql
 CREATE OR REPLACE SECURE VIEW SV_ALL_ACTORS_CLEAN
@@ -14,7 +14,7 @@ FROM ACOLYTE_DB.ACTORS.V_ALL_ACTORS_CLEAN
 ;
 ```
 
-## Create a listing
+## Create a Listing
 
 Share with your team mate from the same region
 
@@ -31,7 +31,7 @@ Share with your team mate from the same region
 
 1. In `Briefly describe your listing` provide a meaningful description
    of the content of the listing, like
-   `This is a cool listing containing all the information regarding cast of the The Acolyte series.`
+   `This is a cool listing containing all the information regarding actors of the The Acolyte series.`
 
 1. Click `Save draft`.
 
@@ -43,7 +43,7 @@ Share with your team mate from the same region
 
 1. Scroll to the bottom of the page and fill the rest of the `Optional Information`.
    Especially important is a query that can be used to feed the Corstex Search service.
-   Please provide the query, and give it appropriate description sothat consumers can
+   Please provide the query, and give it appropriate description so that consumers can
    directly use it.
 
 1. Once done, click `Preview` to confirm how your listing looks like.
@@ -53,7 +53,7 @@ them as a `Consumer account`.
 
 1. `Save` - `Publish listing` - `Done`.
 
-## Get data regarding the episodes
+## Get data regarding the Episodes
 
 Go to `Data Products` - `Private Sharing` and find the listing
 shared with you. Click it and explore.

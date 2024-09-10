@@ -1,5 +1,5 @@
---- simple_chat.py	2024-09-09 13:46:37
-+++ simple_chat_with_history.py	2024-09-06 17:28:36
+--- simple_chat.py	2024-09-10 16:45:51
++++ simple_chat_with_history.py	2024-09-10 15:28:38
 @@ -38,7 +38,7 @@
  
      st.sidebar.button("Clear conversation", key="clear_conversation")
@@ -82,7 +82,7 @@
  def create_generic_prompt(user_question: str):
      """
      Create a prompt for the language model using chat history (if enabled).
-@@ -95,6 +145,10 @@
+@@ -95,16 +145,25 @@
      Returns:
          str: The generated prompt for the language model.
      """
@@ -93,7 +93,12 @@
  
      prompt = dedent(
          f"""
-@@ -107,6 +161,9 @@
+         You are a helpful AI chat assistant.
+ 
++        Use chat history provided between <chat_history>
++        and </chat_history> tags.
+         Question is between <question> and </question> tags.
+ 
          If you don't know the answer just say: "I do not know the answer".
  
  

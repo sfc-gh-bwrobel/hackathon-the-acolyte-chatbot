@@ -1,8 +1,8 @@
-# Enrich the Chatbot with Cast information
+# Enrich the Chatbot with Actor information
 
-In this path...
+In this path you load data for the Actors.
 
-## Create new schema
+## Create a new schema
 
 ```sql
 USE ROLE ACCOUNTADMIN;
@@ -19,7 +19,7 @@ Upload `data/actors/actors_and_characters.tsv`.
 Create table `ALL_ACTORS_RAW`
 Click Next, Load.
 
-Note: The file is a tab-separated file, and contains a header.
+> **Note**: The file is a tab-separated file, and contains a header.
 
 Explore the data using worksheets:
 
@@ -65,13 +65,13 @@ FROM S;
 ## Create a Cortex Search Service
 
 > **Note**: We are skipping attributes to filtern on,
-> as we will not be using them. [docs](https://docs.snowflake.com/en/sql-reference/sql/create-cortex-search)
+> as we will not be using them [docs](https://docs.snowflake.com/en/sql-reference/sql/create-cortex-search).
 
 Concatenate all interesting fields in `listing_text`.
 
 Why do we do it?
 
-Create the service as below
+Create the service as below:
 
 ```sql
 CREATE OR REPLACE CORTEX SEARCH SERVICE ACOLYTE_DB.SERVICES.ALL_ACTORS_SVC
@@ -98,13 +98,15 @@ DROP CORTEX SEARCH SERVICE ACOLYTE_DB.EPISODES.ALL_ACTORS_SVC;
 
 ## Streamlit Application
 
-Create new Streamlit application. Call it: `Simple The Acolyte Chat with RAG`.
+1. Create new Streamlit application. Call it: `Simple The Acolyte Chat with RAG`.
 
-Use created resources for `App location` and `App warehouse`.
+1. Use created resources for `App location` and `App warehouse`.
 
-Copy and paste the code from: `streamlit/simple_the_acolyte_chat_with_rag.py`
+1. Copy and paste the code from: `streamlit/simple_the_acolyte_chat_with_rag.py`
 
-Ask some quesitons:
+## Ask some quesitons
+
+How does the chatbot behave?
 
 1. Who is Sol?
 1. Which actor was playing Sol?
@@ -116,3 +118,7 @@ Ask some quesitons:
 1. Does he appear in The Acolyte?
 1. How does he appear in the Acolyte?
 1. List all characters that were killed in The Acolyte.
+
+Change models the chatbot is using, and check again!
+Rebooting the app in between will allow you to better
+compare.

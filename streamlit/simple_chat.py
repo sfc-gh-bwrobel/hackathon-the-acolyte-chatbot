@@ -100,8 +100,6 @@ def create_generic_prompt(user_question: str):
         f"""
         You are a helpful AI chat assistant.
 
-        Use chat history provided between <chat_history>
-        and </chat_history> tags.
         Question is between <question> and </question> tags.
 
         If you don't know the answer just say: "I do not know the answer".

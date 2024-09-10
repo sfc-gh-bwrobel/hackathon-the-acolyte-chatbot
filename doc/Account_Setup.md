@@ -15,6 +15,8 @@ At the moment of writing one of those would do:
 * AWS Europe Central 1 (Frankfurt)
 * AWS Europe West 1 (Ireland)
 
+Or in any other, but follow [Cross-Region Inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference) documentation.
+
 ## Setup your database
 
 Login to Snowflake, and create a new worksheet. Use role `ACCOUNTADMIN`.

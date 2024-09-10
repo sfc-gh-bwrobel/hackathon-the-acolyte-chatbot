@@ -1,5 +1,5 @@
---- simple_chat_with_history.py	2024-09-06 17:28:36
-+++ simple_the_acolyte_chat_with_rag.py	2024-09-09 13:48:55
+--- simple_chat_with_history.py	2024-09-10 15:28:38
++++ simple_the_acolyte_chat_with_rag.py	2024-09-10 15:28:38
 @@ -11,6 +11,9 @@
      "llama3.1-8b",
      "mixtral-8x7b",

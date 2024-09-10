@@ -1,6 +1,6 @@
 # Share Episodes
 
-## Create secure view
+## Create a Secure View
 
 ```sql
 CREATE OR REPLACE SECURE VIEW SV_ALL_EPISODES_CLEAN
@@ -17,7 +17,7 @@ FROM ACOLYTE_DB.EPISODES.V_ALL_EPISODES_CLEAN
 ;
 ```
 
-## Create a listing
+## Create a Listing
 
 Share with your team mate from the same region
 
@@ -54,7 +54,7 @@ them as a `Consumer account`.
 
 1. `Save` - `Publish listing` - `Done`.
 
-## Get data regarding the actors
+## Get data regarding the Actors
 
 Go to `Data Products` - `Private Sharing` and find the listing
 shared with you. Click it and explore.

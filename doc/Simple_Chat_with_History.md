@@ -8,13 +8,15 @@
 
 ## Streamlit Application
 
-Create new Streamlit application. Call it: `Simple Chat with History`.
+1. Create new Streamlit application. Call it: `Simple Chat with History`.
 
-Use created resources for `App location` and `App warehouse`.
+1. Use created resources for `App location` and `App warehouse`.
 
-Copy and paste the code from: `streamlit/simple_chat_with_history.py`
+1. Copy and paste the code from: `streamlit/simple_chat_with_history.py`
 
-Questions to ask:
+## Questions to ask
+
+Ask the following questions, and compare with `Simple Chat`.
 
 1. What is Java, in 2 sentences?
 1. What is Golang, in 2 sentences?
@@ -26,3 +28,4 @@ Reboot (right top corner) the app and ask new quesitons:
 1. Who is Sol?
 1. What connects Yoda and Sol?
 
+Do you get all the answers?

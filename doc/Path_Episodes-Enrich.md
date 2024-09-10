@@ -1,8 +1,8 @@
 # Enrich the Chatbot with Episode information
 
-In this path...
+In this path you load data for the Episodes.
 
-## Create new schema
+## Create a new schema
 
 ```sql
 USE ROLE ACCOUNTADMIN;
@@ -19,7 +19,7 @@ Upload `data/episodes/season_1-all_episodes.tsv`.
 Create table `ALL_EPISODES_RAW`
 Click Next, Load.
 
-Note: The file is a tab-separated file, and contains a header.
+> **Note**: The file is a tab-separated file, and contains a header.
 
 Explore the data using worksheets:
 
@@ -61,13 +61,13 @@ FROM ACOLYTE_DB.EPISODES.ALL_EPISODES_RAW
 ## Create a Cortex Search Service
 
 > **Note**: We are skipping attributes to filtern on,
-> as we will not be using them. [docs](https://docs.snowflake.com/en/sql-reference/sql/create-cortex-search)
+> as we will not be using them [docs](https://docs.snowflake.com/en/sql-reference/sql/create-cortex-search).
 
 Concatenate all interesting fields in `listing_text`.
 
 Why do we do it?
 
-Create the service as below
+Create the service as below:
 
 ```sql
 CREATE OR REPLACE CORTEX SEARCH SERVICE ACOLYTE_DB.SERVICES.ALL_EPISODES_SVC
@@ -87,7 +87,7 @@ FROM ACOLYTE_DB.EPISODES.V_ALL_EPISODES_CLEAN
 ;
 ```
 
-To clean, when you are ready:
+To clean, when you are ready, or when you want to start over:
 
 ```sql
 SHOW CORTEX SEARCH SERVICES;
@@ -97,13 +97,15 @@ DROP CORTEX SEARCH SERVICE ACOLYTE_DB.EPISODES.ALL_EPISODES_SVC;
 
 ## Streamlit Application
 
-Create new Streamlit application. Call it: `Simple The Acolyte Chat with RAG`.
+1. Create new Streamlit application. Call it: `Simple The Acolyte Chat with RAG`.
 
-Use created resources for `App location` and `App warehouse`.
+1. Use created resources for `App location` and `App warehouse`.
 
-Copy and paste the code from: `streamlit/simple_the_acolyte_chat_with_rag.py`
+1. Copy and paste the code from: `streamlit/simple_the_acolyte_chat_with_rag.py`
 
-Ask some quesitons:
+## Ask some quesitons
+
+How does the chatbot behave?
 
 1. Who is Sol?
 1. Which actor was playing Sol?
@@ -115,3 +117,7 @@ Ask some quesitons:
 1. Does he appear in The Acolyte?
 1. How does he appear in the Acolyte?
 1. List all characters that were killed in The Acolyte.
+
+Change models the chatbot is using, and check again!
+Rebooting the app in between will allow you to better
+compare.
