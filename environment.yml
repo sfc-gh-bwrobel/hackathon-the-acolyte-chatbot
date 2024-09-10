@@ -1,0 +1,11 @@
+name: the-acolyte-chat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - streamlit
+      - snowflake
+      - snowflake.core
+      - -r requirements.txt
