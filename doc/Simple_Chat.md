@@ -12,9 +12,9 @@
 
 ## Streamlit Application
 
-1. Create new Streamlit application. Call it: `Simple Chat`.
+1. In Snowsight, create new Streamlit application. Call it: `Simple Chat`.
 1. Use created resources for `App location` and `App warehouse`.
-1. Copy and paste the code from `streamlit/simple_chat.py`
+1. Copy and paste the code from `streamlit/simple_chat.py` from git
 
 ## Questions to ask
 

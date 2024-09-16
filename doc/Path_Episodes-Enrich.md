@@ -14,10 +14,10 @@ USE WAREHOUSE ACOLYTE_WH;
 
 ## Create new table from file
 
-Go to Data -> Databases -> ACOLYTE_DB -> EPISODES and create a table from file (top right corner).
-Upload `data/episodes/season_1-all_episodes.tsv`.
-Create table `ALL_EPISODES_RAW`
-Click Next, Load.
+1. In Snowsight, go to `Data` -> `Databases` -> `ACOLYTE_DB` -> `EPISODES` and create a table from file (top right corner).
+1. Upload `data/episodes/season_1-all_episodes.tsv` from git
+1. Create table `ALL_EPISODES_RAW`
+1. Click Next, Load.
 
 > **Note**: The file is a tab-separated file, and contains a header.
 
@@ -87,12 +87,15 @@ FROM ACOLYTE_DB.EPISODES.V_ALL_EPISODES_CLEAN
 ;
 ```
 
-To clean, when you are ready, or when you want to start over:
+### Helpful query
+
+To explore, clean, or when you want to start over,
+you can use the following queries:
 
 ```sql
-SHOW CORTEX SEARCH SERVICES;
-DESCRIBE CORTEX SEARCH SERVICE ACOLYTE_DB.EPISODES.ALL_EPISODES_SVC;
-DROP CORTEX SEARCH SERVICE ACOLYTE_DB.EPISODES.ALL_EPISODES_SVC;
+SHOW CORTEX SEARCH SHOW CORTEX SEARCH SERVICES IN SCHEMA ACOLYTE_DB.SERVICES;
+DESCRIBE CORTEX SEARCH SERVICE ACOLYTE_DB.SERVICES.ALL_EPISODES_SVC;
+DROP CORTEX SEARCH SERVICE ACOLYTE_DB.SERVICES.ALL_EPISODES_SVC;
 ```
 
 ## Streamlit Application

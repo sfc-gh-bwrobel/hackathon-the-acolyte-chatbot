@@ -8,6 +8,11 @@
 >
 > DO NOT RUN IT IF YOU DID NOT WATCH THE SERIES BUT YOU ARE PLANNING TO!
 
+## Data source
+
+The data comes from [The_Acolyte_(TV_series)](https://en.wikipedia.org/wiki/The_Acolyte_(TV_series)) article,
+and was manually copied to separate files easy to load to Snowflake.
+
 ## Paths
 
 There are two paths that lead to similar results, and

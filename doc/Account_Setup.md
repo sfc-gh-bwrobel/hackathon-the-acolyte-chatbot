@@ -1,7 +1,7 @@
 # Account Setup
 
 We will be building a chatbot to answer a few questions
-regarding The Acolyte, a Star Wars franchise by Disey.
+regarding The Acolyte, a Star Wars franchise by Disney.
 
 ## Create free Snowflake account
 
@@ -16,6 +16,10 @@ At the moment of writing one of those would do:
 * AWS Europe West 1 (Ireland)
 
 Or in any other, but follow [Cross-Region Inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference) documentation.
+
+> **Note:** if you want to follow the whole hackathon, make sure
+> to pick the same region as your peers. It will simplify
+> sharing of the data between your accounts
 
 ## Setup your database
 

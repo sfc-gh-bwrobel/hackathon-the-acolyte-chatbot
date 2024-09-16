@@ -14,10 +14,10 @@ USE WAREHOUSE ACOLYTE_WH;
 
 ## Create new table from file
 
-Go to Data -> Databases -> ACOLYTE_DB -> ACTORS and create a table from file (top right corner).
-Upload `data/actors/actors_and_characters.tsv`.
-Create table `ALL_ACTORS_RAW`
-Click Next, Load.
+1. In Snowsight, go to `Data` -> `Databases` -> `ACOLYTE_DB` -> `ACTORS` and create a table from file (top right corner).
+1. Upload `data/actors/actors_and_characters.tsv` from git
+1. Create table `ALL_ACTORS_RAW`
+1. Click Next, Load.
 
 > **Note**: The file is a tab-separated file, and contains a header.
 
@@ -88,12 +88,15 @@ FROM ACOLYTE_DB.ACTORS.V_ALL_ACTORS_CLEAN
 ;
 ```
 
-To clean, when you are ready:
+### Helpful query
+
+To explore, clean, or when you want to start over,
+you can use the following queries:
 
 ```sql
-SHOW CORTEX SEARCH SERVICES;
-DESCRIBE CORTEX SEARCH SERVICE ACOLYTE_DB.EPISODES.ALL_ACTORS_SVC;
-DROP CORTEX SEARCH SERVICE ACOLYTE_DB.EPISODES.ALL_ACTORS_SVC;
+SHOW CORTEX SEARCH SERVICES IN SCHEMA ACOLYTE_DB.SERVICES;
+DESCRIBE CORTEX SEARCH SERVICE ACOLYTE_DB.SERVICES.ALL_ACTORS_SVC;
+DROP CORTEX SEARCH SERVICE ACOLYTE_DB.SERVICES.ALL_ACTORS_SVC;
 ```
 
 ## Streamlit Application
