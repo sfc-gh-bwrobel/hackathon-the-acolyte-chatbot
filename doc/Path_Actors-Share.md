@@ -67,3 +67,7 @@ Run example queries shared by the data provider.
 > **Note**, that you should have received an example query
 > you can use for your Cortex Search service. If the query
 > is not there, ask your data provider for one.
+
+---
+
+Next step: [discuss with full data set](Path_Actors-Full_Chat.md)

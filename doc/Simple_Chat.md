@@ -29,3 +29,7 @@ does not remember any context.
 
 > **Note**: In the Options, change model used by the chat
 > and compare the answers.
+
+---
+
+Next step: extend the chat with [history](Simple_Chat_with_History.md)

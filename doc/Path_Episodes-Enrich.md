@@ -121,3 +121,7 @@ How does the chatbot behave?
 Change models the chatbot is using, and check again!
 Rebooting the app in between will allow you to better
 compare.
+
+---
+
+Next step: [share and enrich](Path_Episodes-Share.md)

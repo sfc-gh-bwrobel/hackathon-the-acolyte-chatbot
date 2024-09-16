@@ -29,3 +29,13 @@ Reboot (right top corner) the app and ask new quesitons:
 1. What connects Yoda and Sol?
 
 Do you get all the answers?
+
+---
+
+Now follow the path you have picked:
+
+* Next step for the [actors](Path_Actors-Enrich.md) path
+
+or
+
+* Next step for the [episodes](Path_Episodes-Enrich.md) path

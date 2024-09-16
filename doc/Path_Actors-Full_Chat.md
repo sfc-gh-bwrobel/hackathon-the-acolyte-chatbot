@@ -46,3 +46,7 @@ Using `Simple The Acolyte Chat with RAG` chat with your data:
 1. Does he appear in The Acolyte?
 1. How does he appear in the Acolyte?
 1. List all characters that were killed in The Acolyte.
+
+## Done
+
+Thank you for folliwing the whole path!
